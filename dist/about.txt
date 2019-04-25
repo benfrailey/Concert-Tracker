@@ -1,0 +1,19 @@
+About Concert Tracker
+
+	Application Name: BcfdkpConcertTracker
+
+	Summary: An app that allows users to track information about the concerts they've been
+
+	Developer: Ben Frailey
+
+	Additional References:
+		-json-simple-1.1.1.jar, License http://www.apache.org/licenses/LICENSE-2.0
+		-gson-2.8.5.jar, License http://www.apache.org/licenses/LICENSE-2.0
+
+	How to Use: 
+	- Enter login information. If you haven't made an account before, type a username and password and then click "Create Account" and then sign in.
+	-Click File->Add to add an event to your concert tracker. Once done you can choose either concert or festival and then enter the corresponding information to create an event
+	-Click View and choose between the choices of visualizers to change visualizers
+	-Click an event (Button or Accordion depending on the visualizer used) in order to see information about the concert
+	-Once an event has been opened, you can click "Add Picture" in order to add pictures to the event
+	-If using the Button visualizer, press the "Return to Concert Page" button in order to return to the main screen. If using the Accordion visualizer, simply click the accordion again to close it

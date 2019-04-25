@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="223.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bcfdkpconcerttracker.LoginController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="17.0" layoutY="29.0" prefHeight="247.0" prefWidth="489.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Concert Tracker! Please sign in!" textAlignment="CENTER" wrappingWidth="463.24993896484375">
+               <font>
+                  <Font name="Hiragino Sans W9" size="25.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="489.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username: " wrappingWidth="90.98700714111328">
+                     <font>
+                        <Font name="Hiragino Sans W9" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="username" prefHeight="27.0" prefWidth="233.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="40.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="489.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password: " wrappingWidth="90.87200164794922">
+                     <font>
+                        <Font name="Hiragino Sans W9" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Text>
+                  <PasswordField fx:id="password" prefHeight="27.0" prefWidth="233.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="40.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="58.0" prefWidth="489.0" spacing="20.0">
+               <children>
+                  <Button fx:id="createAccount" mnemonicParsing="false" onAction="#handleCreateAccountButtonAction" text="Create Account" />
+                  <Button mnemonicParsing="false" onAction="#handleHelpButtonAction" text="About" />
+                  <Button fx:id="signIn" mnemonicParsing="false" onAction="#handleSignInButtonAction" text="Sign in" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <Text fx:id="errorText" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

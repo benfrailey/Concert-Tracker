@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="428.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bcfdkpconcerttracker.MainSceneController">
+   <children>
+      <MenuBar fx:id="menu" prefHeight="29.0" prefWidth="600.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAddEventAction" text="Add..." />
+            </items>
+          </Menu>
+          <Menu fx:id="visualizerMenu" mnemonicParsing="false" text="Visualizer" />
+        </menus>
+      </MenuBar>
+      <ScrollPane fx:id="scroll" layoutY="28.0" prefHeight="400.0" prefWidth="600.0">
+         <content>
+            <AnchorPane fx:id="vizPane" prefHeight="398.0" prefWidth="332.0">
+               <children>
+                  <VBox fx:id="eventVBox" prefHeight="393.0" prefWidth="437.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
